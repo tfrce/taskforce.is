@@ -1,0 +1,16 @@
+# www.robotstxt.org/
+# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
+
+User-agent: *
+
+
+      _  _
+    /u@)(@\
+nn     Y
+'Y ____H___
+ \V  |-["]-|___,,
+  \ \|T'T'T|___nn
+  |  || | ||   UU
+ / ``\WAll.E`\
+/ /A \    / A \
+I____J    I___J

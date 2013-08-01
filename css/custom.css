@@ -1,0 +1,27 @@
+/* woah, Ismail Jadun is trying "write" some css web thingies. better watch out. */
+
+body {
+	background: #72A1EF;
+	color: #F8F8FF;
+}
+
+button {
+	background: #ffffff;
+	color: fuchsia;
+}
+
+h1 {
+	color: #F8F8FF;
+	font-family: 'League Gothic';
+	font-size: 100px;
+	font-style: italic;
+}
+
+h2,h3,h4 {
+	color: #F8F8FF;
+	font-style: italic;direction
+}
+
+h5 {
+	color: #F8F8FF;
+}
