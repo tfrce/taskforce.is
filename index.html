@@ -9,24 +9,25 @@
     <script src="taskforce.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="centered"> 
-            <img class="header"
+    <div class="centered container">
+        <div class="row header"> 
+            <img 
                  src="img/taskforce-logo.png" />
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-10 col-md-offset-1">
                 <h2>Taskforce is a group of volunteers working at the intersection of technology and politics.</h2>
                 <h3>We create campaigns to advocate for better technology policy.</h3>
                 <h3>We build open source tools to help make citizen advocacy more effective</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <h2 class="section-header">Campaigns</h2>
+            <div class="box col-md-6">
                 <img class="col-md-12" 
                      src="img/stopwatchingus.png"  />
                 <h2>Stop Watching Us</h2>
                 <p>Taskforce designed, developed and hosted the Stop Watching Us site for the Rally against Mass Surveillance.</p>
             </div>
-            <div class="col-md-6">
+            <div class="box col-md-6">
                 <img class="col-md-12" 
                      src="img/fixthedmca.png" />
                 <h2>Fix the DMCA</h2>
@@ -34,13 +35,13 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="box col-md-6">
                 <img class="col-md-12" 
                      src="img/1984day.jpg" />
                 <h2>1984Day.com</h2>
                 <p>Taskforce created the campaign site for Restore the Fourth 8/4 "1984 Day" rallies that happened in over a dozen cities around the country.</p>
             </div>
-            <div class="col-md-6">
+            <div class="box col-md-6">
                 <img class="col-md-12" 
                      src="img/defundthensa.jpg" />
                 <h2>Defund the NSA</h2>
@@ -48,15 +49,24 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <h2 class="section-header">Tools</h2>
+            <div class="box col-md-6">
+                <h2>call-congress</h2>
+                <p>Call-congress is a Taskforce tool that allows anyone to connect with their representatives in Congress via phone. Commercial tools cost thousands of dollars per month, ours is completely free and open source.</p>
             </div>
-            <div class="col-md-6">
+            <div class="box col-md-6">
+                <h2>email-congress</h2>
+                <p>We're currently working on a project with Sunlight Labs to make emailing legislators simple and easy. At the moment we’re helping process every congressonal contact form into a unified YAML format.</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="box col-md-6">
+                <h2>project-megaphone</h2>
+                <p>Project Megaphone is an "Internet Defense League" style platform that lets any website join our campaigns to help promote good technology policy. It also supports geo-ip targeting for localized promotion.</p>
             </div>
-            <div class="col-md-6">
+            <div class="box col-md-6">
+                <h2>social-buttons-server</h2>
+                <p>Facebook, Twitter and Gooogle Sharing buttons typically ping a third-party script before rendering, giving those sites information about each visitor. Social-buttons-server is a node server that caches social count data and keeps user data private.</p>
             </div>
         </div>
     </div>
