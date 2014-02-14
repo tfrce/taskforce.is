@@ -3,18 +3,24 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-  <title>Taskforce - Activism at the intersection of technology and politics</title> 
-  <meta name="description" content="Taskforce is a group of volunteers who create campaigns to advocate for better technology policy and build open source tools."> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <script src="/js/jquery-2.03.min.js"></script>
-  <script src="/js/taskforce.js"></script>
+  <title>Taskforce - Activism at the intersection of technology and politics</title>
+
+  <meta name="description" content="Taskforce is a group of volunteers who create campaigns to advocate for better technology policy and build open source tools.">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js"></script>
 
-  <link href='//fonts.googleapis.com/css?family=Lato:300|PT+Serif:400,700' rel='stylesheet' type='text/css'>
+  <script src="js/taskforce.js"></script>
+
+  <link href="//fonts.googleapis.com/css?family=Lato:300|PT+Serif:400,700" rel="stylesheet" type="text/css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.2/css/font-awesome.css" rel="stylesheet">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css"> 
-  <link href="/css/styles.css" rel="stylesheet">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" >
+
+  <link href="css/styles.css" rel="stylesheet">
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,12 +30,13 @@
 
   ga('create', 'UA-45447331-1', 'taskforce.is');
   ga('send', 'pageview');
-
   </script>
 
-  <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-  <!-- Facebook OpenGraph tags 
+  <!-- Facebook OpenGraph tags
   <meta property="og:title" content="This is the most effective thing you can do to fight back against the NSA. You in?" />
   <meta property="og:description" content="On October 26th, people from all walks of life will descend on Washington, DC to call for an end to mass NSA surveillance. Will you be there?" />
   <meta property="og:type" content="cause" />
@@ -48,18 +55,44 @@
 
 <body>
   <div class="centered container">
-    <div class="row header"> 
+    <div class="row header">
       <img src="img/taskforce-logo.png" />
       <div class="col-sm-12">
-        <h1>The Taskforce is a volunteer group working at the intersection of technology and politics.</h1>
-        <h2>- We <strong>create campaigns</strong> to advocate for better technology policy.<br>
-        - We <strong>build open source tools</strong> to help make citizen advocacy more effective.</h2>
+        <h1>The Taskforce is a volunteer group working at the intersection of
+        technology and politics.</h1>
+
+        <h2>We <strong>create campaigns</strong> to advocate for better
+         technology policy.</h2>
+
+        <h2>We <strong>build open source tools</strong> to help make citizen
+        advocacy more effective.</h2>
       </div>
     </div>
+
     <div class="row campaigns">
       <h2 class="section-header">Campaigns we've launched:</h2>
 
-      <div class="col-sm-4 item">
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/thedaywefightback">
+        <a href="https://thedaywefightback.org" target="_blank"
+          class="boxlink">
+          <div class="box">
+            <i class="fa fa-external-link"></i>
+            <img class="col-sm-12" src="img/thedaywefightback.png" />
+            <h2>The Day We Fight Back</h2>
+          </div>
+        </a>
+
+        <p>thedaywefightback.org is the central hub website for an online
+        protest against mass surveillance on February 11th, 2014</p>
+
+        <h4>Contributors:</h4>
+
+        <p class="contributors"></p>
+      </div>
+
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/stopwatchingus">
         <a href="https://rally.stopwatching.us" target="_blank" class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
@@ -67,12 +100,17 @@
             <h2>Stop Watching Us</h2>
           </div>
         </a>
-        <p>Taskforce designed, developed and hosted the Stop Watching Us site for the Rally against Mass Surveillance.</p>
+
+        <p>Taskforce designed, developed and hosted the Stop Watching Us site
+        for the Rally against Mass Surveillance.</p>
+
         <h4>Contributors:</h4>
-        <p>Austin Riba, Beau Gunderson, Jeremy Dunck,  JP Schneider, Sina Khanifar, Thomas Davis.</p>
+
+        <p class="contributors"></p>
       </div>
-      
-      <div class="col-sm-4 item">
+
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/DefundTheNSA">
         <a href="http://DefundTheNSA.com" target="_blank" class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
@@ -80,9 +118,14 @@
             <h2>Defund the NSA</h2>
           </div>
         </a>
-        <p>Taskforce campaign site in collaboration with Demand Progress and Fight for the Future in support of the Amash amendment to Defund the NSA. Resulted in 10,000+ calls to Congress.</p>
+
+        <p>Taskforce campaign site in collaboration with Demand Progress and
+        Fight for the Future in support of the Amash amendment to Defund the
+        NSA. Resulted in 10,000+ calls to Congress.</p>
+
         <h4>Contributors:</h4>
-        <p>Beau Gunderson, Jens Nockert, Sina Khanifar, Thomas Davis.</p>
+
+        <p class="contributors"></p>
       </div>
 
       <div class="col-sm-4 item">
@@ -93,11 +136,17 @@
             <h2>1984Day.com</h2>
           </div>
         </a>
-        <p>Taskforce created the campaign site for Restore the Fourth 8/4 "1984 Day" rallies that happened in over a dozen cities around the country.</p>
+
+        <p>Taskforce created the campaign site for Restore the Fourth 8/4 "1984
+        Day" rallies that happened in over a dozen cities around the
+        country.</p>
+
         <h4>Contributors:</h4>
-        <p>Braunson Yager, Eli Sakov, Jesse F Larue, Ismail Jadun, Laurence Smith, Matt Szymanski, Patrick Szabo, Sina Khanifar, Thomas Davis.</p>
+
+        <p>Braunson Yager, Eli Sakov, Jesse F Larue, Ismail Jadun, Laurence
+        Smith, Matt Szymanski, Patrick Szabo, Sina Khanifar, Thomas Davis.</p>
       </div>
-      
+
       <div class="col-sm-4 item">
         <a href="http://FixtheDMCA.org" target="_blank" class="boxlink">
           <div class="box">
@@ -106,89 +155,174 @@
             <h2></h2>
           </div>
         </a>
-        <p>Fix the DMCA is a Taskforce campaign that aims to reform §1201 of the Digital Millenium Copyright Act to make repairing, unlocked, and modifying devices and content legal.</p>
+
+        <p>Fix the DMCA is a Taskforce campaign that aims to reform §1201 of
+        the Digital Millenium Copyright Act to make repairing, unlocked, and
+        modifying devices and content legal.</p>
+
         <h4>Contributors:</h4>
-        <p>Austin Riba, Dimitri Fischler, Joe Kumph, Sina Khanifar, Sohail Khanifar.</p>
+
+        <p>Austin Riba, Dimitri Fischler, Joe Kumph, Sina Khanifar, Sohail
+        Khanifar.</p>
       </div>
     </div>
-
 
     <div class="row tools">
       <h2 class="section-header">Tools we've built:</h2>
 
-      <div class="col-sm-4 item">
-        <a href="https://github.com/tfrce/call-congress" target="_blank" class="boxlink">
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/call-congress">
+        <a href="https://github.com/tfrce/call-congress" target="_blank"
+          class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
             <i class="fa fa-phone fa-5x tool"></i>
             <h2>call-congress</h2>
           </div>
         </a>
-        <p>Call-congress is a Taskforce tool that allows anyone to connect with their representatives in Congress via phone. Commercial tools cost thousands of dollars per month, ours is completely free and open source.</p>
+
+        <p>Call-congress is a Taskforce tool that allows anyone to connect with
+        their representatives in Congress via phone. Commercial tools cost
+        thousands of dollars per month, ours is completely free and open
+        source.</p>
+
         <h4>Contributors:</h4>
-        <p>Adam Greenhall, Sina Khanifar.</p>
+
+        <p class="contributors"></p>
       </div>
 
       <div class="col-sm-4 item">
-        <a href="https://github.com/unitedstates/contact-congress/" target="_blank" class="boxlink">
+        <a href="https://github.com/unitedstates/contact-congress/"
+          target="_blank" class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
             <i class="fa fa-comments fa-5x tool"></i>
             <h2>contact-congress</h2>
           </div>
         </a>
-        <p>We're currently working on a project with Sunlight Labs to make emailing legislators simple and easy. At the moment we’re helping process every congressonal contact form into a unified YAML format.</p>
+
+        <p>We're currently working on a project with Sunlight Labs to make
+        emailing legislators simple and easy. At the moment we’re helping
+        process every congressonal contact form into a unified YAML format.</p>
+
         <h4>Contributors:</h4>
+
         <p>Paul Nickerson.</p>
       </div>
 
-      <div class="col-sm-4 item">
-        <a href="https://github.com/tfrce/project-megaphone" target="_blank" class="boxlink">
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/project-megaphone">
+        <a href="https://github.com/tfrce/project-megaphone" target="_blank"
+          class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
             <i class="fa fa-microphone fa-5x tool"></i>
             <h2>project-megaphone</h2>
           </div>
         </a>
-        <p>Project Megaphone allows any website to add a responsive banner to their site to promote a cause, similar to the function of the Internet Defense League. It also allows messages to be geographically targeted to particular localities.</p>
+
+        <p>Project Megaphone allows any website to add a responsive banner to
+        their site to promote a cause, similar to the function of the Internet
+        Defense League. It also allows messages to be geographically targeted
+        to particular localities.</p>
+
         <h4>Contributors:</h4>
-        <p>Beau Gunderson, Sina Khanifar, Thomas Davis, Tyler Morgan, Braunson Yager.</p>
+
+        <p class="contributors"></p>
       </div>
 
-
-      <div class="col-sm-4 item">
-        <a href="https://github.com/tfrce/social-buttons-server" target="_blank" class="boxlink">
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/social-buttons-server">
+        <a href="https://github.com/tfrce/social-buttons-server"
+          target="_blank" class="boxlink">
           <div class="box">
             <i class="fa fa-external-link"></i>
             <i class="fa fa-share fa-5x tool"></i>
             <h2>social-buttons-server</h2>
           </div>
         </a>
-        <p>Facebook, Twitter and Google Sharing buttons typically ping a third-party script before rendering, giving those sites information about each visitor.</p>
-        <p>Social-buttons-server is a node server that caches social count data and keeps user data private.</p>
+
+        <p>Facebook, Twitter and Google Sharing buttons typically ping a
+        third-party script before rendering, giving those sites information
+        about each visitor.</p>
+
+        <p>Social-buttons-server is a node server that caches social count data
+        and keeps user data private.</p>
+
         <h4>Contributors:</h4>
-        <p>Thomas Davis.</p>
+
+        <p class="contributors"></p>
+      </div>
+
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/thedaywefightback.js">
+        <a href="https://github.com/tfrce/thedaywefightback.js"
+          target="_blank" class="boxlink">
+          <div class="box">
+            <i class="fa fa-external-link"></i>
+            <i class="fa fa-users fa-5x tool"></i>
+            <h2>thedaywefightback.js</h2>
+          </div>
+        </a>
+
+        <p>Thedaywefightback.js is a JavaScript snippet that automatically
+        activates at midnight of February 11th and adds a banner to your site
+        for 26 hours in support of <a
+          href="thedaywefightback.org">thedaywefightback.org</a>.</p>
+
+        <h4>Contributors:</h4>
+
+        <p class="contributors"></p>
+      </div>
+
+      <div class="col-sm-4 item github-project"
+        data-repository="tfrce/node-geoip-web">
+        <a href="https://github.com/tfrce/node-geoip-web"
+          target="_blank" class="boxlink">
+          <div class="box">
+            <i class="fa fa-external-link"></i>
+            <i class="fa fa-globe fa-5x tool"></i>
+            <h2>node-geoip-web</h2>
+          </div>
+        </a>
+
+        <p>node-geoip-web is a very fast IP geolocation server written in node.
+        We use it to target banners to people in specific geographic areas
+        without relying on a third-party service so that we can better control
+        who sees IP and location data.</p>
+
+        <h4>Contributors:</h4>
+
+        <p class="contributors"></p>
       </div>
     </div>
 
     <div class="row join">
       <div class="col-sm-12">
         <h2 class="section-header">Join the team:</h2>
-        <p><strong>Plato said that "the chief penalty [of good people who refuse to lead] is to be governed by someone worse."</strong></p>
-        <p>If we, the people who make technology, don't act to defend it, who will?</p>
-        <p><a href="join.html" class="col-sm-4 centerdiv" id="join"><strong><span>Get involved.</span></strong></a></p>
+
+        <p><strong>Plato said that "the chief penalty [of good people who
+          refuse to lead] is to be governed by someone worse."</strong></p>
+
+        <p>If we, the people who make technology, don't act to defend it, who
+        will?</p>
+
+        <p><a href="join.html" class="col-sm-4 centerdiv"
+          id="join"><strong><span>Get involved.</span></strong></a></p>
       </div>
     </div>
-
 
     <div class="row footer">
       <div class="col-sm-12">
-        <p>This page was made by Taskforce members Sina Khanifar and Karissa McKelvey. Read about <a href="http://sina.is/task-force/">how Taskforce was started</a> (+ <a href="https://news.ycombinator.com/item?id=5974381">HN discussion</a>). <br>
-        The site is open source and licensed under a Creative Commons Attribution 3.0 Unported License.</p>
+        <p>This page was made by Taskforce members Sina Khanifar and Karissa
+        McKelvey. Read about <a href="http://sina.is/task-force/">how Taskforce
+         was started</a> (+ <a
+         href="https://news.ycombinator.com/item?id=5974381">HN
+         discussion</a>).<br>
+        The site is open source and licensed under a Creative Commons
+        Attribution 3.0 Unported License.</p>
       </div>
     </div>
-
-
   </div>
 </body>
 </html>
