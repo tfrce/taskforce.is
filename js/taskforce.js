@@ -7,7 +7,7 @@ $(function () {
     var self = this;
     var repo = $(this).data('repository');
 
-    $.getJSON('http://contributary.herokuapp.com/contributors/' + repo,
+    $.getJSON('//contributary.herokuapp.com/contributors/' + repo,
         function (contributors) {
       var names = _.map(contributors, function (contributor) {
         return _.sprintf('<a href="https://github.com/%s">%s</a>',
