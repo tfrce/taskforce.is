@@ -149,19 +149,34 @@ a.boxlink:hover .box h2 {
    -webkit-transition: all .5s ease-in-out
 }
 
-.row.join a#join:hover {
+
+.row.header a#join {
+    display:block;
+    padding:15px;
+    background-color: #68BCE0;
+    border-radius: 7px;
+    color: #fff;
+    font-family: Lato, sans-serif;
+    margin-top: 20px;
+   transition: all .5s ease-in-out;
+   -moz-transition: all .5s ease-in-out;
+   -webkit-transition: all .5s ease-in-out;
+   font-size: 23px;
+   margin-top:35px;
+}
+
+.row.header a#join:hover, .row.join a#join:hover {
     background-color: #A56EF8;
     text-decoration: none;
-
 }
 
 
-.row.join a#join:hover span {
+#join:hover span {
     display:none;
     }
 
 
-.row.join a#join:hover:after {
+a#join:hover:after {
     content: 'Click.';
 }
 
