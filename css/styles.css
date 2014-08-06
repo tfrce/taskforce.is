@@ -149,6 +149,8 @@ a.boxlink:hover .box h2 {
    -webkit-transition: all .5s ease-in-out
 }
 
+.row.join {margin-top: 30px;}
+
 
 .row.header a#join {
     display:block;
